@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_35">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_send_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/send_again"
+            android:textColor="@color/c_999"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_23"
+        android:layout_marginTop="@dimen/dp_44"
+        android:text="@string/input_verify"
+        android:textColor="@color/c_373737"
+        android:textSize="@dimen/sp_27" />
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:gpvGridColor="#ffffff"
+        app:gpvLineColor="#2196F3"
+        app:gpvLineWidth="1dp"
+        app:gpvPasswordLength="4"
+        app:gpvPasswordTransformation="*"
+        app:gpvPasswordType="numberPassword"
+        app:gpvTextColor="#2196F3"
+        app:gpvTextSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/tv_wait"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_33"
+        android:text="@string/wait_please"
+        android:textColor="@color/c_FA6A13"
+        android:textSize="@dimen/sp_14" />
+</LinearLayout>
