@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginLeft="@dimen/dp_21"
+        android:layout_marginTop="@dimen/dp_28"
+        android:src="@mipmap/zhanweitu_touxiang_mdpi" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_28"
+        android:layout_toRightOf="@id/iv_head"
+        android:text="虾米是小雨"
+        android:textColor="@color/c_373737"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_14"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/dp_9"
+        android:layout_toRightOf="@id/iv_head"
+        android:text="2017年2月08日"
+        android:textColor="@color/c_FF999999"
+        android:textSize="@dimen/sp_10" />
+
+    <TextView
+        android:id="@+id/reviews_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_17"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_108"
+        android:layout_marginTop="@dimen/dp_35"
+        android:text="14"
+        android:textColor="@color/c_FF999999"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_13"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_87"
+        android:layout_marginTop="@dimen/dp_38"
+        android:src="@drawable/comment" />
+
+    <TextView
+        android:id="@+id/praise_count"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_17"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_41"
+        android:layout_marginTop="@dimen/dp_35"
+        android:text="14"
+        android:textColor="@color/c_FF999999"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/iv_praise"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_36"
+        android:src="@drawable/praise" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_18"
+        android:layout_marginLeft="@dimen/dp_68"
+        android:layout_marginTop="@dimen/dp_75"
+        android:text="想在那边找人一起🚴逛逛"
+        android:textColor="@color/c_FF636363"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_17"
+        android:layout_marginLeft="@dimen/dp_69"
+        android:layout_marginTop="@dimen/dp_113"
+        android:text="查看原动态"
+        android:textColor="@color/c_FA6A13"
+        android:textSize="@dimen/sp_12" />
+
+    <View
+        android:layout_width="@dimen/dp_306"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_58"
+        android:layout_marginRight="@dimen/dp_11"
+        android:layout_marginTop="@dimen/dp_162"
+        android:background="@color/c_FFDCDCDC" />
+</RelativeLayout>

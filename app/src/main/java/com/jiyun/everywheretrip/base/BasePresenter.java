@@ -20,11 +20,11 @@ public abstract class BasePresenter<V extends BaseView> {
     }
 
     public void onDestory() {
-        //打断P层和V层的联系
-        mModels = null;
+        //打断P层和V层的联系,
+        mBaseView = null;
         //掐断网络请求
-        if (mModels.size() > 0) {
-            for (BaseModel model:mModels) {
+        if (mModels.size()>0){
+            for (BaseModel model :mModels) {
                 model.onDestory();
             }
             mModels.clear();

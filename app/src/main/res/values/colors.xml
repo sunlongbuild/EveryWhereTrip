@@ -5,6 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="transparent">#00ffffff</color>
+    <color name="translucent">#55000000</color>
+    <color name="transWhite">#80FFFFFF</color>
     <color name="c_FA6A13">#FA6A13</color>
     <color name="c_373737">#373737</color>
     <color name="c_636363">#636363</color>
@@ -14,4 +16,21 @@
     <color name="c_A9A9A9">#A9A9A9</color>
     <color name="c_999">#999</color>
     <color name="c_EAEAEA">#EAEAEA</color>
+    <color name="c_333333">#333333</color>
+    <color name="c_fcf7fc">#fcf7fc</color>
+    <color name="c_DEDEDE">#dedede</color>
+    <color name="c_CECECE">#CECECE</color>
+    <color name="c_FF999999">#FF999999</color>
+    <color name="c_FFFFFFFF">#FFFFFFFF</color>
+    <color name="c_FF636363">#FF636363</color>
+    <color name="c_FF333333">#FF333333</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_FF9D53">#FF9D53</color>
+    <color name="c_FFFFFF">#FFFFFF</color>
+    <color name="c_F0F0F0">#F0F0F0</color>
+    <color name="c_95A1AA">#95A1AA</color>
+    <color name="c_DCDCDC">#dcdcdc</color>
+    <color name="c_FFEAEAEA">#FFEAEAEA</color>
+    <color name="c_FF666666">#FF666666</color>
+    <color name="c_FFDCDCDC">#FFDCDCDC</color>
 </resources>

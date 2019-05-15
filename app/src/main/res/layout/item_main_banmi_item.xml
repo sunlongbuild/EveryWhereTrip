@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginLeft="@dimen/dp_13"
+        android:layout_marginTop="@dimen/dp_16"
+        android:backgroundTint="@color/c_FFFFFFFF">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_335"
+            android:layout_height="@dimen/dp_120">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:scaleType="center"
+                android:src="@color/c_FA6A13" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_22"
+                android:layout_marginLeft="@dimen/dp_137"
+                android:layout_marginTop="@dimen/dp_17"
+                android:text="杨晨"
+                android:textColor="@color/c_FF333333"
+                android:textSize="@dimen/sp_19" />
+
+            <ImageView
+                android:id="@+id/follow"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_18"
+                android:layout_marginLeft="@dimen/dp_305"
+                android:layout_marginTop="@dimen/dp_18"
+                android:src="@drawable/follow_unselected" />
+
+            <TextView
+                android:id="@+id/tv_following"
+                android:layout_width="@dimen/dp_61"
+                android:layout_height="@dimen/dp_17"
+                android:layout_marginLeft="@dimen/dp_138"
+                android:layout_marginTop="@dimen/dp_42"
+                android:text="248人关注"
+                android:textColor="@color/c_FF999999"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_139"
+                android:layout_marginTop="@dimen/dp_71"
+                android:src="@mipmap/position" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_156"
+                android:layout_marginTop="@dimen/dp_69"
+                android:text="东京"
+                android:textColor="@color/c_FF999999"
+                android:textSize="@dimen/sp_12" />
+
+            <ImageView
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_139"
+                android:layout_marginTop="@dimen/dp_92"
+                android:src="@mipmap/edcaution" />
+
+            <TextView
+                android:id="@+id/tv_occupation"
+                android:layout_width="@dimen/dp_132"
+                android:layout_height="@dimen/dp_14"
+                android:layout_marginLeft="@dimen/dp_155"
+                android:layout_marginTop="@dimen/dp_90"
+                android:text="日本国家旅游局专栏作者"
+                android:textColor="@color/c_FF999999"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

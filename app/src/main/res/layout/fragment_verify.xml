@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorWhite"
     android:orientation="vertical">
 
@@ -42,22 +42,20 @@
 
     <com.jungly.gridpasswordview.GridPasswordView
         android:id="@+id/code"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="@dimen/dp_266"
+        android:layout_height="@dimen/dp_56"
+        android:layout_marginLeft="@dimen/dp_55"
+        android:layout_marginTop="83dp"
         app:gpvGridColor="#ffffff"
         app:gpvLineColor="#2196F3"
         app:gpvLineWidth="1dp"
         app:gpvPasswordLength="4"
-        app:gpvPasswordTransformation="*"
-        app:gpvPasswordType="numberPassword"
+        app:gpvPasswordType="textPassword"
         app:gpvTextColor="#2196F3"
         app:gpvTextSize="25sp" />
-
-
+    <!--app:gpvPasswordTransformation="*"-->
     <TextView
         android:id="@+id/tv_wait"
-        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

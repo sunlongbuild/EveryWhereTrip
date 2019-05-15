@@ -24,7 +24,16 @@ public interface Constants {
 
     String PATH_CACHE = PATH_DATA + "/NetCache";
     String DATA = "data";
-    //夜间模式
-    String MODE = "mode";
-    String NIGHT_CURRENT_FRAG_POS = "fragment_pos";
+
+    String TOKEN = "token";
+    String DESC = "description";
+    String USERNAME = "userName";
+    String GENDER = "gender";
+    String EMAIL = "email";
+    String PHOTO = "photo";
+    String PHONE = "phone";
+    String TYPE = "type";
+    String VERIFY_CODE = "verifyCode";
+    String USER_NAME = "user_name";
+    String SINGNATURE = "signature";
 }

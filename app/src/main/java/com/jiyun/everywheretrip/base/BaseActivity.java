@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.jiyun.everywheretrip.utils.ToastUtil;
 import com.jiyun.everywheretrip.widget.LoadingDialog;
 
 import butterknife.ButterKnife;
@@ -52,7 +53,7 @@ public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> e
         mPresenter = null;
     }
     public void showLoading(){
-        if(mLoadingDialog !=null){
+        if(mLoadingDialog ==null){
             mLoadingDialog = new LoadingDialog(this);
         }
         mLoadingDialog.show();
@@ -61,5 +62,10 @@ public abstract class BaseActivity<V extends BaseView,P extends BasePresenter> e
         if(mLoadingDialog !=null && mLoadingDialog.isShowing()){
             mLoadingDialog.dismiss();
         }
+    }
+
+    @Override
+    public void toastShort(String msg) {
+        ToastUtil.showShort(msg);
     }
 }

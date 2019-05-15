@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_pop_man"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/c_FFFFFF"
+            android:text="@string/man"
+            android:textSize="@dimen/sp_14" />
+        <View
+            android:background="@color/c_DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+
+        <Button
+            android:id="@+id/btn_pop_woman"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/c_FFFFFF"
+            android:text="@string/woman"
+            android:textSize="@dimen/sp_14" />
+        <View
+            android:background="@color/c_DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+        <Button
+            android:id="@+id/btn_pop_secret"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/c_FFFFFF"
+            android:text="@string/secret"
+            android:textSize="@dimen/sp_14" />
+        <View
+            android:background="@color/c_DEDEDE"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="@dimen/dp_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/c_FFFFFF"
+            android:textColor="@color/c_FA6A13"
+            android:text="@string/cancel"
+            android:textSize="@dimen/sp_14" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

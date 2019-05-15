@@ -1,11 +1,17 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/c_fcf7fc</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <!--全屏的界面-->
+    <style name="FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">true</item>
     </style>
 
     <style name="LoadingTheme" parent="Theme.AppCompat.Dialog">
@@ -13,5 +19,12 @@
         <item name="android:windowBackground">@color/transparent</item>
         <!--去掉背景半透明效果-->
         <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--将用于配置到特定的Activity上的样式-->
+
+    <!--闪屏-->
+    <style name="SplashStyle" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/layer_splash</item>
     </style>
 </resources>

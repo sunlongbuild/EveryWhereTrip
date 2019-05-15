@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.main.activity.UserNameActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_42">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/dp_17"
+            android:layout_height="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_15"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:id="@+id/toolBar_title"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_19"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_9"
+            android:text="@string/update_name"
+            android:textColor="@color/c_333333"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_17"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/finish"
+            android:textColor="@color/c_FA6A13"
+            android:textSize="@dimen/sp_14" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="572dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@color/c_CECECE"
+            android:maxLength="10"
+            android:minLines="3"
+            android:paddingTop="5dp"
+            android:textColorHint="@color/c_95A1AA" />
+
+        <TextView
+            android:id="@+id/tv_font_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_50"
+            android:text="0/10"
+            android:textColor="@color/c_FF999999"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+</LinearLayout>

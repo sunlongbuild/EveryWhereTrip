@@ -2,7 +2,7 @@ package com.jiyun.everywheretrip.presenter.login;
 
 import com.jiyun.everywheretrip.base.BasePresenter;
 import com.jiyun.everywheretrip.bean.login.VerifyCodeBean;
-import com.jiyun.everywheretrip.model.LoginModel;
+import com.jiyun.everywheretrip.model.login.LoginModel;
 import com.jiyun.everywheretrip.net.ResultCallBack;
 import com.jiyun.everywheretrip.view.login.LoginView;
 
