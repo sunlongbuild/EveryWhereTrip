@@ -93,6 +93,8 @@ public class MainActivity extends BaseActivity<MyInfoView, MyInfoPresenter> impl
         int a = 10;
         int b = 20;
 
+        String str = "我是本地的用户";
+
         mList = new ArrayList<>();
         mList.add(new HomeFragment());
         mList.add(new BanMiFragment());
