@@ -90,6 +90,9 @@ public class MainActivity extends BaseActivity<MyInfoView, MyInfoPresenter> impl
 
         StatusBarUtil.setLightMode(this);
 
+        int a = 10;
+        int b = 20;
+
         mList = new ArrayList<>();
         mList.add(new HomeFragment());
         mList.add(new BanMiFragment());
