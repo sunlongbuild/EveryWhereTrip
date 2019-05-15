@@ -92,6 +92,7 @@ public class MainActivity extends BaseActivity<MyInfoView, MyInfoPresenter> impl
 
         int a = 10;
         int b = 20;
+        String = "我是远端的用户!";
 
         String str = "我是本地的用户";
 
