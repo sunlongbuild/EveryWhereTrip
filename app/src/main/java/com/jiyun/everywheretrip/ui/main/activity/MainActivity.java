@@ -85,10 +85,11 @@ public class MainActivity extends BaseActivity<MyInfoView, MyInfoPresenter> impl
         mToolbar.setNavigationIcon(R.drawable.ab);
         setSupportActionBar(mToolbar);
 
-
         initNavigationView();
 
         StatusBarUtil.setLightMode(this);
+
+        String hello = "你好."
 
         mList = new ArrayList<>();
         mList.add(new HomeFragment());
