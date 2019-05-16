@@ -89,7 +89,7 @@ public class MainActivity extends BaseActivity<MyInfoView, MyInfoPresenter> impl
 
         StatusBarUtil.setLightMode(this);
 
-        String hello = "你好."
+        String hello = "你好.";
 
         mList = new ArrayList<>();
         mList.add(new HomeFragment());
