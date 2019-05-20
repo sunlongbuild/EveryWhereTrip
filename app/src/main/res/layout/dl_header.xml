@@ -320,6 +320,7 @@
             android:src="@drawable/icon_me_banben" />
 
         <TextView
+            android:id="@+id/tv_verson"
             android:layout_width="@dimen/dp_56"
             android:layout_height="@dimen/dp_16"
             android:layout_below="@id/cd_cardView"

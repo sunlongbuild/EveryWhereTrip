@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
+import com.bumptech.glide.request.RequestOptions;
 import com.jiyun.everywheretrip.R;
 import com.jiyun.everywheretrip.api.main.MainApiService;
 import com.jiyun.everywheretrip.base.Constants;
@@ -17,6 +19,7 @@ import com.jiyun.everywheretrip.bean.main.BanMiListBean;
 import com.jiyun.everywheretrip.net.BaseObserver;
 import com.jiyun.everywheretrip.net.HttpUtils;
 import com.jiyun.everywheretrip.net.RxUtils;
+import com.jiyun.everywheretrip.utils.ImageLoader;
 import com.jiyun.everywheretrip.utils.SpUtil;
 import com.jiyun.everywheretrip.utils.ToastUtil;
 
@@ -58,7 +61,7 @@ public class MyBanMiAdapter extends RecyclerView.Adapter<MyBanMiAdapter.ViewHold
         viewHolder.mTvFollowing.setText(bean.getFollowing() + "");
         viewHolder.mTvLocation.setText(bean.getLocation());
         viewHolder.mTvOccupation.setText(bean.getOccupation());
-        Glide.with(context).load(bean.getPhoto()).into(viewHolder.mIvPhoto);
+        ImageLoader.setCornerImage(context,bean.getPhoto(),viewHolder.mIvPhoto,5,R.mipmap.zhanweitu_touxiang_mdpi);
 
         mId = bean.getId();
         mToken = (String) SpUtil.getParam(Constants.TOKEN, "");

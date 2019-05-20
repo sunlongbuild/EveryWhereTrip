@@ -24,6 +24,7 @@ import com.jiyun.everywheretrip.net.HttpUtils;
 import com.jiyun.everywheretrip.net.RxUtils;
 import com.jiyun.everywheretrip.ui.main.activity.HomeDetailsActivity;
 import com.jiyun.everywheretrip.ui.main.activity.ReviewsActivity;
+import com.jiyun.everywheretrip.utils.ImageLoader;
 import com.jiyun.everywheretrip.utils.SpUtil;
 import com.jiyun.everywheretrip.utils.ToastUtil;
 
@@ -83,8 +84,7 @@ public class MyHomeDeTailsAdapter extends RecyclerView.Adapter<RecyclerView.View
 
                 HomeDetailsBean.ResultBean.RouteBean route = mList.get(0).getRoute();
                 mId = route.getId();
-                Glide.with(mContext).load(route.getCardURL()).into(largerMapViewHolder.mIvBigImg);
-
+                ImageLoader.setImage(mContext,route.getCardURL(),largerMapViewHolder.mIvBigImg,R.mipmap.zhanweitu_touxiang_mdpi);
             } else if (viewHolder instanceof IntroduceViewHolder) {
                 IntroduceViewHolder introduceViewHolder = (IntroduceViewHolder) viewHolder;
 
@@ -94,8 +94,7 @@ public class MyHomeDeTailsAdapter extends RecyclerView.Adapter<RecyclerView.View
                 introduceViewHolder.mTvIdentity.setText(banmi.getOccupation());
                 introduceViewHolder.mTvAddress.setText(banmi.getLocation());
                 introduceViewHolder.mTvInfo.setText(banmi.getIntroduction());
-                Glide.with(mContext).load(banmi.getPhoto()).apply(requestOptions).into(introduceViewHolder.mIvHeadPicture);
-
+                ImageLoader.setCircleImage(mContext,banmi.getPhoto(),introduceViewHolder.mIvHeadPicture,R.mipmap.zhanweitu_touxiang_mdpi);
             } else if (viewHolder instanceof CommentViewHolder) {
                 CommentViewHolder commentViewHolder = (CommentViewHolder) viewHolder;
                 //创建适配器

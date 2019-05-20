@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.jiyun.everywheretrip.R;
 import com.jiyun.everywheretrip.bean.main.ReviewsBean;
+import com.jiyun.everywheretrip.utils.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,8 +51,7 @@ public class MyReviewsAdapter extends RecyclerView.Adapter<MyReviewsAdapter.View
         viewHolder.mTvTime.setText(bean.getCreatedAt());
         viewHolder.mTvContent.setText(bean.getContent());
         //viewHolder.mReviewsCount.setText(resultBean.getReviewsCount()+"");
-        RequestOptions options = new RequestOptions().circleCrop();
-        Glide.with(mContext).load(bean.getUserPhoto()).apply(options).into(viewHolder.mIvHead);
+        ImageLoader.setCircleImage(mContext,bean.getUserPhoto(),viewHolder.mIvHead,R.mipmap.zhanweitu_touxiang_mdpi);
 
         viewHolder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

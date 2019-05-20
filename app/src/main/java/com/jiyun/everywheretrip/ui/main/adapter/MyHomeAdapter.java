@@ -65,7 +65,7 @@ public class MyHomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
                 @Override
                 public void displayImage(Context context, Object path, ImageView imageView) {
                     HomeBean.ResultBean.BannersBean dataBean = (HomeBean.ResultBean.BannersBean) path;
-                    Glide.with(context).load(dataBean.getImageURL()).into(imageView);
+                    com.jiyun.everywheretrip.utils.ImageLoader.setImage(context,dataBean.getImageURL(),imageView,R.mipmap.zhanweitu_touxiang_mdpi);
                 }
             });
             bannnerViewHolder.mBanner.setBannerStyle(BannerConfig.NOT_INDICATOR);
@@ -94,7 +94,7 @@ public class MyHomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             articleViewHolder.mTvPrice.setText("￥" + routesBean.getPrice());
             articleViewHolder.mTvTitle.setText(routesBean.getIntro());
             articleViewHolder.mTvPriceInCents.setText(routesBean.getPurchasedTimes() + "感兴趣");
-            Glide.with(context).load(routesBean.getCardURL()).into(articleViewHolder.mIvCardURL);
+            com.jiyun.everywheretrip.utils.ImageLoader.setCircleImage(context,routesBean.getCardURL(),articleViewHolder.mIvCardURL,R.mipmap.zhanweitu_touxiang_mdpi);
 
             articleViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

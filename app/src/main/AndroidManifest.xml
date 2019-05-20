@@ -4,12 +4,28 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
 
     <!-- 友盟 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 百度地图 -->
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    //这个权限用于进行网络定位
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //这个权限用于访问GPS定位
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    //程序在手机屏幕关闭后后台进程仍然运行
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:name=".base.BaseApp"
@@ -20,6 +36,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- 百度地图 start -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="G89gzGGmOCvAO7mayYbU2V2h4NdFLypZ" />
+        <!-- 百度地图 end -->
         <!-- 在<application>标签下配置 友盟 start -->
         <activity
             android:name=".wxapi.WXEntryActivity"
@@ -89,20 +110,20 @@
             android:name=".ui.login.activity.LoginActivity"
             android:theme="@style/SplashStyle" />
         <activity android:name=".ui.login.activity.AgreementActivity" />
-        <activity android:name=".ui.main.activity.MainActivity" />
-        <activity android:name=".ui.main.activity.PersonalInfoActivity" />
-        <activity android:name=".ui.main.activity.HeadActivity" />
-        <activity android:name=".ui.main.activity.UserNameActivity" />
-        <activity android:name=".ui.main.activity.SignatureActivity" />
-        <activity
-            android:name=".ui.guide.activity.SplashActivity"
-            android:theme="@style/SplashStyle">
+        <activity android:name=".ui.main.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.main.activity.PersonalInfoActivity" />
+        <activity android:name=".ui.main.activity.HeadActivity" />
+        <activity android:name=".ui.main.activity.UserNameActivity" />
+        <activity android:name=".ui.main.activity.SignatureActivity" />
+        <activity
+            android:name=".ui.guide.activity.SplashActivity"
+            android:theme="@style/FullScreen"></activity>
         <activity
             android:name=".ui.guide.activity.GuideActivity"
             android:theme="@style/FullScreen" />
@@ -112,7 +133,10 @@
         <activity android:name=".ui.main.activity.BanMiDetailsActivity" />
         <activity android:name=".ui.main.activity.ReviewsActivity" />
         <activity android:name=".ui.JavaScript.SpecialTopicActivity" />
-        <activity android:name=".ui.main.activity.BanMiFollowingActivity"></activity>
+        <activity android:name=".ui.main.activity.BanMiFollowingActivity" />
+        <activity android:name=".ui.country.activity.CityActivity">
+
+        </activity>
     </application>
 
 </manifest>

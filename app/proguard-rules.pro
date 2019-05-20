@@ -226,8 +226,10 @@ public <init> (org.json.JSONObject);
  -dontwarn com.just.agentweb.**
 
 
-
-
+#百度地图
+-keep class com.baidu.** {*;}
+-keep class mapsdkvi.com.** {*;}
+-dontwarn com.baidu.**
 
 
 

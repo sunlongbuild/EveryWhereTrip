@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_nowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_13"
+        android:text="当前定位"
+        android:textColor="@color/c_FF666666"
+        android:textSize="@dimen/sp_12" />
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_34"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_border">
+
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="@dimen/dp_11"
+            android:layout_height="@dimen/dp_13"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_26"
+            android:src="@drawable/icon_dingwei_citylist_hdpi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_7"
+            android:text="北京"
+            android:textColor="@color/c_333333"
+            android:textSize="@dimen/dp_12" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="热门城市"
+        android:textColor="@color/c_666666"
+        android:textSize="@dimen/sp_12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_53"
+        android:layout_marginTop="@dimen/dp_12" />
+</LinearLayout>

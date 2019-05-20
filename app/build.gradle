@@ -3,6 +3,7 @@ apply plugin: 'org.greenrobot.greendao' // apply plugin
 android {
     compileSdkVersion 28
     defaultConfig {
+        multiDexEnabled true
         applicationId "com.jiyun.everywheretrip"
         minSdkVersion 16
         targetSdkVersion 28
@@ -19,6 +20,10 @@ android {
                     outputFileName = "EveryWhereTrip_${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
                 }
             }
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
         }
         debug {
             minifyEnabled false
@@ -28,6 +33,11 @@ android {
                     outputFileName = "EveryWhereTrip_${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
                 }
             }
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+
         }
     }
     greendao {
@@ -55,7 +65,17 @@ android {
         flavor -> flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
     }
     flavorDimensions "EveryWhereTrip"
-    // 获取当前系统时间
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 // 获取当前系统时间
 def releaseTime() {
@@ -104,7 +124,12 @@ dependencies {
     implementation 'com.jungly:gridPasswordView:0.3'
     implementation files('libs/umeng-analytics-8.0.2.jar')
     //第三方WebView
-    api 'com.just.agentweb:agentweb:4.0.3-alpha@aar' // (必选)
+    api 'com.just.agentweb:agentweb:4.0.3-alpha@aar'
+    // (必选)
     //沉浸式状态栏
     implementation 'com.jaeger.statusbarutil:library:1.5.1'
+    implementation 'com.belerweb:pinyin4j:2.5.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    //垂直的tablayout
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
 }

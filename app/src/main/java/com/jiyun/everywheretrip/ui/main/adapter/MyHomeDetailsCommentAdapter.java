@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.jiyun.everywheretrip.R;
 import com.jiyun.everywheretrip.bean.main.HomeDetailsBean;
+import com.jiyun.everywheretrip.utils.ImageLoader;
 
 import java.util.List;
 
@@ -45,8 +46,7 @@ public class MyHomeDetailsCommentAdapter extends RecyclerView.Adapter {
         threeHolder.mTvName.setText(mList.get(i).getUserName());
         threeHolder.mTvTime.setText(mList.get(i).getCreatedAt());
         threeHolder.mTvContent.setText(mList.get(i).getContent());
-        RequestOptions options = new RequestOptions().circleCrop();
-        Glide.with(mContext).load(mList.get(i).getUserPhoto()).apply(options).into(threeHolder.mIvHeadPicture);
+        ImageLoader.setCircleImage(mContext,mList.get(i).getUserPhoto(),threeHolder.mIvHeadPicture,R.mipmap.zhanweitu_touxiang_mdpi);
     }
 
     @Override
